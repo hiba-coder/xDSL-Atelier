@@ -1,0 +1,5 @@
+	// BeginInjectInto abstractsyntax.aspects.ContainerAspect#void moveAlong() from abstractsyntax.aspects.ConveyorAspect
+		if (_self instanceof productionlinesystem.abstractsyntax.Conveyor){
+			abstractsyntax.aspects.ConveyorAspect.moveAlong((productionlinesystem.abstractsyntax.Conveyor)_self);
+		} else
+		// EndInjectInto abstractsyntax.aspects.ContainerAspect#void moveAlong() from abstractsyntax.aspects.ConveyorAspect

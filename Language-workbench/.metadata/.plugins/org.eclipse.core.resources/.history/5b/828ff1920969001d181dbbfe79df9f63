@@ -1,0 +1,16 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.runtimestate;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Head</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage#getHead()
+ * @model
+ * @generated
+ */
+public interface Head extends Parts {
+} // Head

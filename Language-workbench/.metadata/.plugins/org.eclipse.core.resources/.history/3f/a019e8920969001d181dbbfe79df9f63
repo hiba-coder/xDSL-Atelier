@@ -1,0 +1,202 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.runtimestate.impl;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EcoreUtil;
+
+import productionlinesystem.abstractsyntax.runtimestate.ContainerState;
+import productionlinesystem.abstractsyntax.runtimestate.Parts;
+import productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Parts</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link productionlinesystem.abstractsyntax.runtimestate.impl.PartsImpl#getContainerState <em>Container State</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public abstract class PartsImpl extends MinimalEObjectImpl.Container implements Parts {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PartsImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return runtimestatePackage.Literals.PARTS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ContainerState getContainerState() {
+		if (eContainerFeatureID() != runtimestatePackage.PARTS__CONTAINER_STATE)
+			return null;
+		return (ContainerState) eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetContainerState(ContainerState newContainerState, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject) newContainerState, runtimestatePackage.PARTS__CONTAINER_STATE,
+				msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setContainerState(ContainerState newContainerState) {
+		if (newContainerState != eInternalContainer()
+				|| (eContainerFeatureID() != runtimestatePackage.PARTS__CONTAINER_STATE && newContainerState != null)) {
+			if (EcoreUtil.isAncestor(this, newContainerState))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newContainerState != null)
+				msgs = ((InternalEObject) newContainerState).eInverseAdd(this,
+						runtimestatePackage.CONTAINER_STATE__PARTS, ContainerState.class, msgs);
+			msgs = basicSetContainerState(newContainerState, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, runtimestatePackage.PARTS__CONTAINER_STATE,
+					newContainerState, newContainerState));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			return basicSetContainerState((ContainerState) otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			return basicSetContainerState(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			return eInternalContainer().eInverseRemove(this, runtimestatePackage.CONTAINER_STATE__PARTS,
+					ContainerState.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			return getContainerState();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			setContainerState((ContainerState) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			setContainerState((ContainerState) null);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case runtimestatePackage.PARTS__CONTAINER_STATE:
+			return getContainerState() != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //PartsImpl

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<abstractsyntax:ProductionLineModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:abstractsyntax="http://www.example.org/abstractsyntax">
+  <elements xsi:type="abstractsyntax:GenHead" name="GenHead" out="//@elements.2"/>
+  <elements xsi:type="abstractsyntax:GenHandle" name="GenHandle" out="//@elements.3"/>
+  <elements xsi:type="abstractsyntax:Conveyor" name="A" tray="//@elements.5"/>
+  <elements xsi:type="abstractsyntax:Conveyor" name="B" tray="//@elements.5"/>
+  <elements xsi:type="abstractsyntax:Conveyor" name="C"/>
+  <elements xsi:type="abstractsyntax:Tray" name="Tray"/>
+  <elements xsi:type="abstractsyntax:Assembler" name="Assembler" out="//@elements.4" in="//@elements.5"/>
+</abstractsyntax:ProductionLineModel>

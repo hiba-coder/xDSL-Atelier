@@ -1,0 +1,1525 @@
+!SESSION 2022-11-20 19:03:51.649 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 19:04:20.748
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:18:15.976
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ContainerAspect._privk3_getCurrentparts(ContainerAspect.java:66)
+	at abstractsyntax.aspects.ContainerAspect.getCurrentparts(ContainerAspect.java:49)
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:37:03.388
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ContainerAspect._privk3_getCurrentparts(ContainerAspect.java:66)
+	at abstractsyntax.aspects.ContainerAspect.getCurrentparts(ContainerAspect.java:49)
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:37:17.847
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ContainerAspect._privk3_getCurrentparts(ContainerAspect.java:66)
+	at abstractsyntax.aspects.ContainerAspect.getCurrentparts(ContainerAspect.java:49)
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+!SESSION 2022-11-20 19:37:41.780 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 19:37:55.756
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 19:38:10.930
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:38:43.821
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:42:37.970
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:43:08.755
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+!SESSION 2022-11-20 19:43:26.147 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 19:43:39.883
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 19:43:53.033
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:44:09.528
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:52)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+!SESSION 2022-11-20 19:45:17.611 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 19:45:28.446
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 19:45:42.915
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:45:52.614
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+!SESSION 2022-11-20 19:49:07.733 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 19:49:22.175
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 19:49:39.983
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 19:49:52.028
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ContainerAspect._privk3_getCurrentparts(ContainerAspect.java:66)
+	at abstractsyntax.aspects.ContainerAspect.getCurrentparts(ContainerAspect.java:49)
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:46)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:15)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:80)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:53)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:58)
+	... 9 more
+!SESSION 2022-11-20 20:06:56.269 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 20:07:13.164
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 20:07:29.746
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 20:07:44.376
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.findFirst(IteratorExtensions.java:110)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.findFirst(IterableExtensions.java:81)
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$2(ProductionLineModelAspect.java:101)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:100)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:57)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:62)
+	... 9 more
+!SESSION 2022-11-20 20:12:02.362 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 20:12:17.330
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 20:12:30.651
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 20:12:45.831
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$2(ProductionLineModelAspect.java:108)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:102)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:59)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:64)
+	... 9 more
+!SESSION 2022-11-20 20:18:51.547 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 20:19:04.644
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 20:19:18.817
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 20:19:42.089
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$2(ProductionLineModelAspect.java:108)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:102)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:59)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:64)
+	... 9 more
+!SESSION 2022-11-20 20:23:05.333 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 20:23:19.272
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 20:23:31.378
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 20:23:43.957
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$2(ProductionLineModelAspect.java:115)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:109)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:60)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:65)
+	... 9 more
+
+!SESSION 2022-11-20 20:48:35.414 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 20:48:59.702
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 20:49:14.581
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$2(ProductionLineModelAspect.java:115)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:109)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:60)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:65)
+	... 9 more
+!SESSION 2022-11-20 20:55:06.142 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 20:55:21.745
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 20:55:34.882
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:00:15.350 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:00:27.730
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:00:40.674
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:04:10.800 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:04:28.141
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:04:42.103
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:06:44.341 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:06:55.441
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:07:11.443
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:08:27.532 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:08:40.778
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:08:55.007
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:11:34.198 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:11:45.751
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:11:58.893
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:12:10.399
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.ClassCastException: class productionlinesystem.abstractsyntax.impl.GenHeadImpl cannot be cast to class productionlinesystem.abstractsyntax.Container (productionlinesystem.abstractsyntax.impl.GenHeadImpl and productionlinesystem.abstractsyntax.Container are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @243b3600)
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$1(ProductionLineModelAspect.java:100)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:99)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:57)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:62)
+	... 9 more
+!SESSION 2022-11-20 21:12:39.935 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:12:51.804
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:13:05.645
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:13:20.263 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:13:32.219
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:13:45.371
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:13:58.414
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:272)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:86)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeEntryPoint(PlainK3ExecutionEngine.java:263)
+	... 4 more
+Caused by: java.lang.ClassCastException: class productionlinesystem.abstractsyntax.impl.GenHeadImpl cannot be cast to class productionlinesystem.abstractsyntax.Container (productionlinesystem.abstractsyntax.impl.GenHeadImpl and productionlinesystem.abstractsyntax.Container are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4d18d0f)
+	at abstractsyntax.aspects.ProductionLineModelAspect.lambda$2(ProductionLineModelAspect.java:112)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.exists(IteratorExtensions.java:267)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.exists(IterableExtensions.java:223)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_main(ProductionLineModelAspect.java:111)
+	at abstractsyntax.aspects.ProductionLineModelAspect$2.execute(ProductionLineModelAspect.java:57)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.main(ProductionLineModelAspect.java:62)
+	... 9 more
+!SESSION 2022-11-20 21:16:37.807 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:16:49.944
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:17:06.778
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:31:49.366 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:32:04.313
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:32:21.588
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:35:44.318 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:35:56.761
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:36:13.142
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:39:04.230 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:39:16.125
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:39:31.470
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:40:06.854 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:40:18.453
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:40:30.814
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:42:17.911 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:42:30.000
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:42:44.203
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:43:12.809 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:43:25.436
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:43:40.588
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:44:03.238
+!MESSAGE Exception received java.lang.reflect.InvocationTargetException, stopping engine.
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:225)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	... 5 more
+Caused by: java.lang.NullPointerException
+	at abstractsyntax.aspects.GenHeadAspect._privk3_start(GenHeadAspect.java:49)
+	at abstractsyntax.aspects.GenHeadAspect$1.execute(GenHeadAspect.java:25)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:25)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_initialize(ProductionLineModelAspect.java:85)
+	at abstractsyntax.aspects.ProductionLineModelAspect$1.execute(ProductionLineModelAspect.java:31)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:36)
+	... 10 more
+!SESSION 2022-11-20 21:44:52.586 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:45:03.231
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:45:19.718
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:46:32.387 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:46:43.345
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:46:57.301
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:47:33.072 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:47:45.637
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:47:59.157
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:49:49.935
+!MESSAGE Exception in Addon (org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceEngineAddon@562ab221), java.lang.NullPointerException
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.addState(GenericTraceConstructor.java:490)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:144)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.aboutToExecuteStep(AbstractTraceAddon.java:133)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyAboutToExecuteLogicalStep(AbstractExecutionEngine.java:217)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.beforeExecutionStep(AbstractExecutionEngine.java:485)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.beforeExecutionStep(AbstractSequentialExecutionEngine.java:132)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:43)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:25)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_initialize(ProductionLineModelAspect.java:91)
+	at abstractsyntax.aspects.ProductionLineModelAspect$1.execute(ProductionLineModelAspect.java:34)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.addState(GenericTraceConstructor.java:490)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:144)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.aboutToExecuteStep(AbstractTraceAddon.java:133)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyAboutToExecuteLogicalStep(AbstractExecutionEngine.java:217)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.beforeExecutionStep(AbstractExecutionEngine.java:485)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.beforeExecutionStep(AbstractSequentialExecutionEngine.java:132)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:43)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:25)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_initialize(ProductionLineModelAspect.java:91)
+	at abstractsyntax.aspects.ProductionLineModelAspect$1.execute(ProductionLineModelAspect.java:34)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:49:50.004
+!MESSAGE Exception in Addon (org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceEngineAddon@562ab221), java.util.NoSuchElementException
+	at java.base/java.util.LinkedList.removeFirst(LinkedList.java:274)
+	at java.base/java.util.LinkedList.pop(LinkedList.java:805)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.endStep(GenericTraceConstructor.java:680)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:148)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.stepExecuted(AbstractTraceAddon.java:138)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyLogicalStepExecuted(AbstractExecutionEngine.java:231)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.afterExecutionStep(AbstractExecutionEngine.java:534)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.afterExecutionStep(AbstractSequentialExecutionEngine.java:92)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:45)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!STACK 0
+java.util.NoSuchElementException
+	at java.base/java.util.LinkedList.removeFirst(LinkedList.java:274)
+	at java.base/java.util.LinkedList.pop(LinkedList.java:805)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.endStep(GenericTraceConstructor.java:680)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:148)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.stepExecuted(AbstractTraceAddon.java:138)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyLogicalStepExecuted(AbstractExecutionEngine.java:231)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.afterExecutionStep(AbstractExecutionEngine.java:534)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.afterExecutionStep(AbstractSequentialExecutionEngine.java:92)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:45)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-11-20 21:49:57.845
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+java.lang.IllegalStateException: can't terminate a not connected debug target.
+	at org.eclipse.gemoc.dsl.debug.DebugTargetUtils.terminateRequest(DebugTargetUtils.java:160)
+	at org.eclipse.gemoc.dsl.debug.ide.ModelUpdater.terminateRequest(ModelUpdater.java:35)
+	at org.eclipse.gemoc.dsl.debug.ide.adapter.DSLDebugTargetAdapter.terminate(DSLDebugTargetAdapter.java:143)
+	at org.eclipse.debug.internal.core.commands.TerminateCommand.execute(TerminateCommand.java:35)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:36)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:50:02.813
+!MESSAGE Exception in Addon (org.eclipse.gemoc.executionframework.debugger.OmniscientGenericSequentialModelDebugger@52c1e199), java.lang.IllegalStateException: a terminate reply can't happend when the debug target is not connected, terminating or if the thread is already terminated.
+	at org.eclipse.gemoc.dsl.debug.ThreadUtils.terminatedReply(ThreadUtils.java:203)
+	at org.eclipse.gemoc.dsl.debug.ide.ModelUpdater.terminatedReply(ModelUpdater.java:157)
+	at org.eclipse.gemoc.dsl.debug.ide.adapter.DSLDebugTargetAdapter.handleTerminatedReply(DSLDebugTargetAdapter.java:565)
+	at org.eclipse.gemoc.dsl.debug.ide.adapter.DSLDebugTargetAdapter.handleEvent(DSLDebugTargetAdapter.java:380)
+	at org.eclipse.gemoc.dsl.debug.ide.event.DSLDebugEventDispatcher.handleEvent(DSLDebugEventDispatcher.java:109)
+	at org.eclipse.gemoc.dsl.debug.ide.AbstractDSLDebugger.terminated(AbstractDSLDebugger.java:598)
+	at org.eclipse.gemoc.executionframework.debugger.GenericSequentialModelDebugger.engineStopped(GenericSequentialModelDebugger.java:384)
+	at org.eclipse.gemoc.executionframework.debugger.OmniscientGenericSequentialModelDebugger.engineStopped(OmniscientGenericSequentialModelDebugger.java:276)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyEngineStopped(AbstractExecutionEngine.java:186)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.stop(AbstractExecutionEngine.java:380)
+	at org.eclipse.gemoc.executionframework.ui.views.engine.actions.StopEngineAction.run(StopEngineAction.java:45)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1435)
+
+!STACK 0
+java.lang.IllegalStateException: a terminate reply can't happend when the debug target is not connected, terminating or if the thread is already terminated.
+	at org.eclipse.gemoc.dsl.debug.ThreadUtils.terminatedReply(ThreadUtils.java:203)
+	at org.eclipse.gemoc.dsl.debug.ide.ModelUpdater.terminatedReply(ModelUpdater.java:157)
+	at org.eclipse.gemoc.dsl.debug.ide.adapter.DSLDebugTargetAdapter.handleTerminatedReply(DSLDebugTargetAdapter.java:565)
+	at org.eclipse.gemoc.dsl.debug.ide.adapter.DSLDebugTargetAdapter.handleEvent(DSLDebugTargetAdapter.java:380)
+	at org.eclipse.gemoc.dsl.debug.ide.event.DSLDebugEventDispatcher.handleEvent(DSLDebugEventDispatcher.java:109)
+	at org.eclipse.gemoc.dsl.debug.ide.AbstractDSLDebugger.terminated(AbstractDSLDebugger.java:598)
+	at org.eclipse.gemoc.executionframework.debugger.GenericSequentialModelDebugger.engineStopped(GenericSequentialModelDebugger.java:384)
+	at org.eclipse.gemoc.executionframework.debugger.OmniscientGenericSequentialModelDebugger.engineStopped(OmniscientGenericSequentialModelDebugger.java:276)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyEngineStopped(AbstractExecutionEngine.java:186)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.stop(AbstractExecutionEngine.java:380)
+	at org.eclipse.gemoc.executionframework.ui.views.engine.actions.StopEngineAction.run(StopEngineAction.java:45)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1435)
+!SESSION 2022-11-20 21:50:19.586 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:50:30.304
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:50:44.375
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:50:53.656
+!MESSAGE Exception in Addon (org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceEngineAddon@38002a42), java.lang.NullPointerException
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.addState(GenericTraceConstructor.java:490)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:144)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.aboutToExecuteStep(AbstractTraceAddon.java:133)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyAboutToExecuteLogicalStep(AbstractExecutionEngine.java:217)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.beforeExecutionStep(AbstractExecutionEngine.java:485)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.beforeExecutionStep(AbstractSequentialExecutionEngine.java:132)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:43)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:25)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_initialize(ProductionLineModelAspect.java:91)
+	at abstractsyntax.aspects.ProductionLineModelAspect$1.execute(ProductionLineModelAspect.java:34)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.addState(GenericTraceConstructor.java:490)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:144)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.aboutToExecuteStep(AbstractTraceAddon.java:133)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyAboutToExecuteLogicalStep(AbstractExecutionEngine.java:217)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.beforeExecutionStep(AbstractExecutionEngine.java:485)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.beforeExecutionStep(AbstractSequentialExecutionEngine.java:132)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:43)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.GenHeadAspect.start(GenHeadAspect.java:30)
+	at abstractsyntax.aspects.MachineAspect.start(MachineAspect.java:25)
+	at abstractsyntax.aspects.ProductionLineModelAspect._privk3_initialize(ProductionLineModelAspect.java:91)
+	at abstractsyntax.aspects.ProductionLineModelAspect$1.execute(ProductionLineModelAspect.java:34)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine$2.run(PlainK3ExecutionEngine.java:295)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine$1.doExecute(AbstractCommandBasedSequentialExecutionEngine.java:39)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:44)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.gemoc.executionframework.engine 4 0 2022-11-20 21:50:53.710
+!MESSAGE Exception in Addon (org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceEngineAddon@38002a42), java.util.NoSuchElementException
+	at java.base/java.util.LinkedList.removeFirst(LinkedList.java:274)
+	at java.base/java.util.LinkedList.pop(LinkedList.java:805)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.endStep(GenericTraceConstructor.java:680)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:148)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.stepExecuted(AbstractTraceAddon.java:138)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyLogicalStepExecuted(AbstractExecutionEngine.java:231)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.afterExecutionStep(AbstractExecutionEngine.java:534)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.afterExecutionStep(AbstractSequentialExecutionEngine.java:92)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:45)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!STACK 0
+java.util.NoSuchElementException
+	at java.base/java.util.LinkedList.removeFirst(LinkedList.java:274)
+	at java.base/java.util.LinkedList.pop(LinkedList.java:805)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceConstructor.endStep(GenericTraceConstructor.java:680)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.lambda$0(AbstractTraceAddon.java:148)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:265)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.modifyTrace(AbstractTraceAddon.java:276)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.manageStep(AbstractTraceAddon.java:155)
+	at org.eclipse.gemoc.trace.gemoc.traceaddon.AbstractTraceAddon.stepExecuted(AbstractTraceAddon.java:138)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.notifyLogicalStepExecuted(AbstractExecutionEngine.java:231)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.afterExecutionStep(AbstractExecutionEngine.java:534)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.afterExecutionStep(AbstractSequentialExecutionEngine.java:92)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:45)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractCommandBasedSequentialExecutionEngine.executeOperation(AbstractCommandBasedSequentialExecutionEngine.java:32)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.executeStep(PlainK3ExecutionEngine.java:292)
+	at fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager.executeStep(IStepManager.java:20)
+	at abstractsyntax.aspects.ProductionLineModelAspect.initialize(ProductionLineModelAspect.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.callInitializeModel(PlainK3ExecutionEngine.java:216)
+	at org.eclipse.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine.initializeModel(PlainK3ExecutionEngine.java:250)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractSequentialExecutionEngine.performStart(AbstractSequentialExecutionEngine.java:84)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine.startSynchronous(AbstractExecutionEngine.java:352)
+	at org.eclipse.gemoc.executionframework.engine.core.AbstractExecutionEngine$1.run(AbstractExecutionEngine.java:335)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+!SESSION 2022-11-20 21:51:13.552 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:51:23.842
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:51:35.767
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-11-20 21:52:21.266 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio
+Command-line arguments:  -product org.eclipse.gemoc.gemoc_studio.branding.gemoc_studio -data C:\Users\HP\Desktop\GL-promo2023\project\Language-workbench/../runtime-pls-runtime -dev file:C:/Users/HP/Desktop/GL-promo2023/project/Language-workbench/.metadata/.plugins/org.eclipse.pde.core/pls-runtime/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-20 21:52:31.306
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-20 21:52:43.969
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

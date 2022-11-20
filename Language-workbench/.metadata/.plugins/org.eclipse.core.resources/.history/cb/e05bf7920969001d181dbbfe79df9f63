@@ -1,0 +1,587 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.impl;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import productionlinesystem.abstractsyntax.AbstractsyntaxFactory;
+import productionlinesystem.abstractsyntax.AbstractsyntaxPackage;
+import productionlinesystem.abstractsyntax.Assembler;
+import productionlinesystem.abstractsyntax.Conveyor;
+import productionlinesystem.abstractsyntax.GenHandle;
+import productionlinesystem.abstractsyntax.GenHead;
+import productionlinesystem.abstractsyntax.Generator;
+import productionlinesystem.abstractsyntax.Hammer;
+import productionlinesystem.abstractsyntax.Handle;
+import productionlinesystem.abstractsyntax.Head;
+import productionlinesystem.abstractsyntax.Machine;
+import productionlinesystem.abstractsyntax.Part;
+import productionlinesystem.abstractsyntax.ProductionLineElement;
+import productionlinesystem.abstractsyntax.ProductionLineModel;
+import productionlinesystem.abstractsyntax.Tray;
+
+import productionlinesystem.abstractsyntax.runtimestate.impl.runtimestatePackageImpl;
+
+import productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class AbstractsyntaxPackageImpl extends EPackageImpl implements AbstractsyntaxPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productionLineModelEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productionLineElementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass containerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass machineEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass conveyorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass trayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assemblerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass generatorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genHandleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genHeadEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass partEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass headEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass handleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hammerEClass = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see productionlinesystem.abstractsyntax.AbstractsyntaxPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private AbstractsyntaxPackageImpl() {
+		super(eNS_URI, AbstractsyntaxFactory.eINSTANCE);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 *
+	 * <p>This method is used to initialize {@link AbstractsyntaxPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static AbstractsyntaxPackage init() {
+		if (isInited)
+			return (AbstractsyntaxPackage) EPackage.Registry.INSTANCE.getEPackage(AbstractsyntaxPackage.eNS_URI);
+
+		// Obtain or create and register package
+		Object registeredAbstractsyntaxPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		AbstractsyntaxPackageImpl theAbstractsyntaxPackage = registeredAbstractsyntaxPackage instanceof AbstractsyntaxPackageImpl
+				? (AbstractsyntaxPackageImpl) registeredAbstractsyntaxPackage
+				: new AbstractsyntaxPackageImpl();
+
+		isInited = true;
+
+		// Obtain or create and register interdependencies
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(runtimestatePackage.eNS_URI);
+		runtimestatePackageImpl theruntimestatePackage = (runtimestatePackageImpl) (registeredPackage instanceof runtimestatePackageImpl
+				? registeredPackage
+				: runtimestatePackage.eINSTANCE);
+
+		// Create package meta-data objects
+		theAbstractsyntaxPackage.createPackageContents();
+		theruntimestatePackage.createPackageContents();
+
+		// Initialize created meta-data
+		theAbstractsyntaxPackage.initializePackageContents();
+		theruntimestatePackage.initializePackageContents();
+
+		// Mark meta-data to indicate it can't be changed
+		theAbstractsyntaxPackage.freeze();
+
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(AbstractsyntaxPackage.eNS_URI, theAbstractsyntaxPackage);
+		return theAbstractsyntaxPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProductionLineModel() {
+		return productionLineModelEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductionLineModel_Elements() {
+		return (EReference) productionLineModelEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductionLineModel_Simulationstate() {
+		return (EReference) productionLineModelEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProductionLineElement() {
+		return productionLineElementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductionLineElement_Name() {
+		return (EAttribute) productionLineElementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductionLineElement_System() {
+		return (EReference) productionLineElementEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getContainer() {
+		return containerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getContainer_Parts() {
+		return (EReference) containerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMachine() {
+		return machineEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMachine_Out() {
+		return (EReference) machineEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMachine_In() {
+		return (EReference) machineEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getConveyor() {
+		return conveyorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getConveyor_Tray() {
+		return (EReference) conveyorEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getTray() {
+		return trayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAssembler() {
+		return assemblerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGenerator() {
+		return generatorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGenHandle() {
+		return genHandleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGenHead() {
+		return genHeadEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPart() {
+		return partEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHead() {
+		return headEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHandle() {
+		return handleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHammer() {
+		return hammerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AbstractsyntaxFactory getAbstractsyntaxFactory() {
+		return (AbstractsyntaxFactory) getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated)
+			return;
+		isCreated = true;
+
+		// Create classes and their features
+		productionLineModelEClass = createEClass(PRODUCTION_LINE_MODEL);
+		createEReference(productionLineModelEClass, PRODUCTION_LINE_MODEL__ELEMENTS);
+		createEReference(productionLineModelEClass, PRODUCTION_LINE_MODEL__SIMULATIONSTATE);
+
+		productionLineElementEClass = createEClass(PRODUCTION_LINE_ELEMENT);
+		createEAttribute(productionLineElementEClass, PRODUCTION_LINE_ELEMENT__NAME);
+		createEReference(productionLineElementEClass, PRODUCTION_LINE_ELEMENT__SYSTEM);
+
+		containerEClass = createEClass(CONTAINER);
+		createEReference(containerEClass, CONTAINER__PARTS);
+
+		machineEClass = createEClass(MACHINE);
+		createEReference(machineEClass, MACHINE__OUT);
+		createEReference(machineEClass, MACHINE__IN);
+
+		conveyorEClass = createEClass(CONVEYOR);
+		createEReference(conveyorEClass, CONVEYOR__TRAY);
+
+		trayEClass = createEClass(TRAY);
+
+		assemblerEClass = createEClass(ASSEMBLER);
+
+		generatorEClass = createEClass(GENERATOR);
+
+		genHandleEClass = createEClass(GEN_HANDLE);
+
+		genHeadEClass = createEClass(GEN_HEAD);
+
+		partEClass = createEClass(PART);
+
+		headEClass = createEClass(HEAD);
+
+		handleEClass = createEClass(HANDLE);
+
+		hammerEClass = createEClass(HAMMER);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized)
+			return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Obtain other dependent packages
+		runtimestatePackage theruntimestatePackage = (runtimestatePackage) EPackage.Registry.INSTANCE
+				.getEPackage(runtimestatePackage.eNS_URI);
+
+		// Add subpackages
+		getESubpackages().add(theruntimestatePackage);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+		containerEClass.getESuperTypes().add(this.getProductionLineElement());
+		machineEClass.getESuperTypes().add(this.getProductionLineElement());
+		conveyorEClass.getESuperTypes().add(this.getContainer());
+		trayEClass.getESuperTypes().add(this.getContainer());
+		assemblerEClass.getESuperTypes().add(this.getMachine());
+		generatorEClass.getESuperTypes().add(this.getMachine());
+		genHandleEClass.getESuperTypes().add(this.getGenerator());
+		genHeadEClass.getESuperTypes().add(this.getGenerator());
+		headEClass.getESuperTypes().add(this.getPart());
+		handleEClass.getESuperTypes().add(this.getPart());
+		hammerEClass.getESuperTypes().add(this.getPart());
+
+		// Initialize classes, features, and operations; add parameters
+		initEClass(productionLineModelEClass, ProductionLineModel.class, "ProductionLineModel", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getProductionLineModel_Elements(), this.getProductionLineElement(),
+				this.getProductionLineElement_System(), "elements", null, 0, -1, ProductionLineModel.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductionLineModel_Simulationstate(), theruntimestatePackage.getSimulationState(), null,
+				"simulationstate", null, 0, 1, ProductionLineModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(productionLineElementEClass, ProductionLineElement.class, "ProductionLineElement", IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProductionLineElement_Name(), ecorePackage.getEString(), "name", null, 0, 1,
+				ProductionLineElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductionLineElement_System(), this.getProductionLineModel(),
+				this.getProductionLineModel_Elements(), "system", null, 1, 1, ProductionLineElement.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(containerEClass, productionlinesystem.abstractsyntax.Container.class, "Container", IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getContainer_Parts(), this.getPart(), null, "parts", null, 0, -1,
+				productionlinesystem.abstractsyntax.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(machineEClass, Machine.class, "Machine", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMachine_Out(), this.getConveyor(), null, "out", null, 0, 1, Machine.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getMachine_In(), this.getTray(), null, "in", null, 0, 1, Machine.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+
+		initEClass(conveyorEClass, Conveyor.class, "Conveyor", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getConveyor_Tray(), this.getTray(), null, "tray", null, 0, 1, Conveyor.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+
+		initEClass(trayEClass, Tray.class, "Tray", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(assemblerEClass, Assembler.class, "Assembler", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(generatorEClass, Generator.class, "Generator", IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(genHandleEClass, GenHandle.class, "GenHandle", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(genHeadEClass, GenHead.class, "GenHead", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(partEClass, Part.class, "Part", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(headEClass, Head.class, "Head", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(handleEClass, Handle.class, "Handle", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(hammerEClass, Hammer.class, "Hammer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		// Create resource
+		createResource(eNS_URI);
+	}
+
+} //AbstractsyntaxPackageImpl

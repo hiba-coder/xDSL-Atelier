@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: productionLineSystem.semantics
+Bundle-SymbolicName: productionLineSystem.semantics; singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle: fr.inria.diverse.k3.al.annotationprocessor.plugin;bundle-version="3.0.0";visibility:="reexport"
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

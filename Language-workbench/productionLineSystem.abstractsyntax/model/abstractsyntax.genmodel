@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/productionLineSystem.abstractsyntax/src-gen" creationIcons="false"
+    editDirectory="/productionLineSystem.abstractsyntax.edit/src-gen" editorDirectory="/productionLineSystem.abstractsyntax.editor/src-gen"
+    modelPluginID="productionLineSystem.abstractsyntax" modelName="Abstractsyntax"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>abstractsyntax.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Abstractsyntax" basePackage="productionlinesystem" disposableProviderFactory="true"
+      ecorePackage="abstractsyntax.ecore#/">
+    <genClasses ecoreClass="abstractsyntax.ecore#//ProductionLineModel">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ProductionLineModel/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ProductionLineModel/simulationstate"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//ProductionLineElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//ProductionLineElement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ProductionLineElement/system"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Container">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Container/parts"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Machine">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Machine/out"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Machine/in"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Conveyor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Conveyor/tray"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Tray"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Assembler"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Generator"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//GenHandle"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//GenHead"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Part"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Head"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Handle"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Hammer"/>
+    <nestedGenPackages prefix="runtimestate" disposableProviderFactory="true" ecorePackage="abstractsyntax.ecore#//runtimestate">
+      <genClasses ecoreClass="abstractsyntax.ecore#//runtimestate/SimulationState">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//runtimestate/SimulationState/elementsState"/>
+      </genClasses>
+      <genClasses ecoreClass="abstractsyntax.ecore#//runtimestate/ProductionLineElementState">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference abstractsyntax.ecore#//runtimestate/ProductionLineElementState/productionlineelement"/>
+      </genClasses>
+      <genClasses ecoreClass="abstractsyntax.ecore#//runtimestate/ContainerState"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

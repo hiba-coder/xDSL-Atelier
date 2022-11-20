@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="abstractsyntax" nsURI="http://www.example.org/abstractsyntax"
+    nsPrefix="abstractsyntax">
+  <eClassifiers xsi:type="ecore:EClass" name="ProductionLineModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//ProductionLineElement" containment="true" eOpposite="#//ProductionLineElement/system"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="simulationstate" eType="#//runtimestate/SimulationState"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductionLineElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system" lowerBound="1"
+        eType="#//ProductionLineModel" eOpposite="#//ProductionLineModel/elements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Container" abstract="true" eSuperTypes="#//ProductionLineElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="part" upperBound="-1" eType="#//Part"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Machine" abstract="true" eSuperTypes="#//ProductionLineElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" eType="#//Conveyor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" eType="#//Tray"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Conveyor" eSuperTypes="#//Container">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tray" eType="#//Tray"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tray" eSuperTypes="#//Container"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Assembler" eSuperTypes="#//Machine"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Generator" abstract="true" eSuperTypes="#//Machine"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenHandle" eSuperTypes="#//Generator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenHead" eSuperTypes="#//Generator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Part" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Head" eSuperTypes="#//Part"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Handle" eSuperTypes="#//Part"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Hammer" eSuperTypes="#//Part"/>
+  <eSubpackages name="runtimestate" nsURI="runtimestate" nsPrefix="runtimestate">
+    <eClassifiers xsi:type="ecore:EClass" name="SimulationState">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="elementsState" lowerBound="1"
+          upperBound="-1" eType="#//runtimestate/ProductionLineElementState" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ProductionLineElementState">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="productionlineelement"
+          lowerBound="1" eType="#//ProductionLineElement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ContainerState" eSuperTypes="#//runtimestate/ProductionLineElementState"/>
+  </eSubpackages>
+</ecore:EPackage>

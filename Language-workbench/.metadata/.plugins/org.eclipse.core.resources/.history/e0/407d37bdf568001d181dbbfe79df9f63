@@ -1,0 +1,77 @@
+package abstractsyntax.aspects
+
+import fr.inria.diverse.k3.al.annotationprocessor.Aspect
+import productionlinesystem.abstractsyntax.ProductionLineModel
+import productionlinesystem.abstractsyntax.ProductionLineElement
+import productionlinesystem.abstractsyntax.Container
+import productionlinesystem.abstractsyntax.Machine
+import productionlinesystem.abstractsyntax.Conveyor
+import productionlinesystem.abstractsyntax.Tray
+import productionlinesystem.abstractsyntax.Assembler
+import productionlinesystem.abstractsyntax.Generator
+import productionlinesystem.abstractsyntax.GenHandle
+import productionlinesystem.abstractsyntax.GenHead
+
+import static extension abstractsyntax.aspects.ProductionLineModelAspect.*
+import static extension abstractsyntax.aspects.ProductionLineElementAspect.*
+import static extension abstractsyntax.aspects.ContainerAspect.*
+import static extension abstractsyntax.aspects.MachineAspect.*
+import static extension abstractsyntax.aspects.ConveyorAspect.*
+import static extension abstractsyntax.aspects.TrayAspect.*
+import static extension abstractsyntax.aspects.AssemblerAspect.*
+import static extension abstractsyntax.aspects.GeneratorAspect.*
+import static extension abstractsyntax.aspects.GenHandleAspect.*
+import static extension abstractsyntax.aspects.GenHeadAspect.*
+
+@Aspect(className=ProductionLineModel)
+class ProductionLineModelAspect {
+
+}
+
+@Aspect(className=ProductionLineElement)
+abstract class ProductionLineElementAspect {
+
+}
+
+@Aspect(className=Container)
+abstract class ContainerAspect extends ProductionLineElementAspect {
+
+}
+
+@Aspect(className=Machine)
+abstract class MachineAspect extends ProductionLineElementAspect {
+
+}
+
+@Aspect(className=Conveyor)
+class ConveyorAspect extends ContainerAspect {
+
+}
+
+@Aspect(className=Tray)
+class TrayAspect extends ContainerAspect {
+
+}
+
+@Aspect(className=Assembler)
+class AssemblerAspect extends MachineAspect {
+
+}
+
+@Aspect(className=Generator)
+abstract class GeneratorAspect extends MachineAspect {
+
+}
+
+@Aspect(className=GenHandle)
+class GenHandleAspect extends GeneratorAspect {
+
+}
+
+@Aspect(className=GenHead)
+class GenHeadAspect extends GeneratorAspect {
+
+}
+
+
+

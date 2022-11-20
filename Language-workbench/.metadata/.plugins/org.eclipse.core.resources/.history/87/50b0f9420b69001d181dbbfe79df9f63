@@ -1,0 +1,53 @@
+package abstractsyntax.runtimestate.aspects
+
+import fr.inria.diverse.k3.al.annotationprocessor.Aspect
+import productionlinesystem.abstractsyntax.runtimestate.SimulationState
+import productionlinesystem.abstractsyntax.runtimestate.ProductionLineElementState
+import productionlinesystem.abstractsyntax.runtimestate.ContainerState
+
+
+import static extension abstractsyntax.runtimestate.aspects.SimulationStateAspect.*
+import static extension abstractsyntax.runtimestate.aspects.ProductionLineElementStateAspect.*
+import static extension abstractsyntax.runtimestate.aspects.ContainerStateAspect.*
+import static extension abstractsyntax.runtimestate.aspects.PartsAspect.*
+import static extension abstractsyntax.runtimestate.aspects.HeadAspect.*
+import static extension abstractsyntax.runtimestate.aspects.HandleAspect.*
+import static extension abstractsyntax.runtimestate.aspects.HammerAspect.*
+
+@Aspect(className=SimulationState)
+class SimulationStateAspect {
+
+}
+
+@Aspect(className=ProductionLineElementState)
+class ProductionLineElementStateAspect {
+
+}
+
+@Aspect(className=ContainerState)
+class ContainerStateAspect extends ProductionLineElementStateAspect {
+
+}
+
+@Aspect(className=Parts)
+abstract class PartsAspect {
+
+}
+
+@Aspect(className=Head)
+class HeadAspect extends PartsAspect {
+
+}
+
+@Aspect(className=Handle)
+class HandleAspect extends PartsAspect {
+
+}
+
+@Aspect(className=Hammer)
+class HammerAspect extends PartsAspect {
+
+}
+
+
+

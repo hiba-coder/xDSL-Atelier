@@ -1,0 +1,976 @@
+/**
+ */
+package productionlinesystem.abstractsyntax;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see productionlinesystem.abstractsyntax.AbstractsyntaxFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface AbstractsyntaxPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "abstractsyntax";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://www.example.org/abstractsyntax";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "abstractsyntax";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	AbstractsyntaxPackage eINSTANCE = productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.ProductionLineModelImpl <em>Production Line Model</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.ProductionLineModelImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getProductionLineModel()
+	 * @generated
+	 */
+	int PRODUCTION_LINE_MODEL = 0;
+
+	/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_MODEL__ELEMENTS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Simulationstate</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_MODEL__SIMULATIONSTATE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Production Line Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_MODEL_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Production Line Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_MODEL_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.ProductionLineElementImpl <em>Production Line Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.ProductionLineElementImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getProductionLineElement()
+	 * @generated
+	 */
+	int PRODUCTION_LINE_ELEMENT = 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_ELEMENT__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_ELEMENT__SYSTEM = 1;
+
+	/**
+	 * The number of structural features of the '<em>Production Line Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_ELEMENT_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Production Line Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_LINE_ELEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.ContainerImpl <em>Container</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.ContainerImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getContainer()
+	 * @generated
+	 */
+	int CONTAINER = 2;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__NAME = PRODUCTION_LINE_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__SYSTEM = PRODUCTION_LINE_ELEMENT__SYSTEM;
+
+	/**
+	 * The number of structural features of the '<em>Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER_FEATURE_COUNT = PRODUCTION_LINE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER_OPERATION_COUNT = PRODUCTION_LINE_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.MachineImpl <em>Machine</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.MachineImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getMachine()
+	 * @generated
+	 */
+	int MACHINE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE__NAME = PRODUCTION_LINE_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE__SYSTEM = PRODUCTION_LINE_ELEMENT__SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Out</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE__OUT = PRODUCTION_LINE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE__IN = PRODUCTION_LINE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Machine</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_FEATURE_COUNT = PRODUCTION_LINE_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Machine</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_OPERATION_COUNT = PRODUCTION_LINE_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.ConveyorImpl <em>Conveyor</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.ConveyorImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getConveyor()
+	 * @generated
+	 */
+	int CONVEYOR = 4;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVEYOR__NAME = CONTAINER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVEYOR__SYSTEM = CONTAINER__SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Tray</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVEYOR__TRAY = CONTAINER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Conveyor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVEYOR_FEATURE_COUNT = CONTAINER_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Conveyor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVEYOR_OPERATION_COUNT = CONTAINER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.TrayImpl <em>Tray</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.TrayImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getTray()
+	 * @generated
+	 */
+	int TRAY = 5;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRAY__NAME = CONTAINER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRAY__SYSTEM = CONTAINER__SYSTEM;
+
+	/**
+	 * The number of structural features of the '<em>Tray</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRAY_FEATURE_COUNT = CONTAINER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Tray</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRAY_OPERATION_COUNT = CONTAINER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.AssemblerImpl <em>Assembler</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.AssemblerImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getAssembler()
+	 * @generated
+	 */
+	int ASSEMBLER = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLER__NAME = MACHINE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLER__SYSTEM = MACHINE__SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Out</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLER__OUT = MACHINE__OUT;
+
+	/**
+	 * The feature id for the '<em><b>In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLER__IN = MACHINE__IN;
+
+	/**
+	 * The number of structural features of the '<em>Assembler</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLER_FEATURE_COUNT = MACHINE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Assembler</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLER_OPERATION_COUNT = MACHINE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.GeneratorImpl <em>Generator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.GeneratorImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getGenerator()
+	 * @generated
+	 */
+	int GENERATOR = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR__NAME = MACHINE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR__SYSTEM = MACHINE__SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Out</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR__OUT = MACHINE__OUT;
+
+	/**
+	 * The feature id for the '<em><b>In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR__IN = MACHINE__IN;
+
+	/**
+	 * The number of structural features of the '<em>Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_FEATURE_COUNT = MACHINE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_OPERATION_COUNT = MACHINE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.GenHandleImpl <em>Gen Handle</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.GenHandleImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getGenHandle()
+	 * @generated
+	 */
+	int GEN_HANDLE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HANDLE__NAME = GENERATOR__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HANDLE__SYSTEM = GENERATOR__SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Out</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HANDLE__OUT = GENERATOR__OUT;
+
+	/**
+	 * The feature id for the '<em><b>In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HANDLE__IN = GENERATOR__IN;
+
+	/**
+	 * The number of structural features of the '<em>Gen Handle</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HANDLE_FEATURE_COUNT = GENERATOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Gen Handle</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HANDLE_OPERATION_COUNT = GENERATOR_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link productionlinesystem.abstractsyntax.impl.GenHeadImpl <em>Gen Head</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see productionlinesystem.abstractsyntax.impl.GenHeadImpl
+	 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getGenHead()
+	 * @generated
+	 */
+	int GEN_HEAD = 9;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HEAD__NAME = GENERATOR__NAME;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HEAD__SYSTEM = GENERATOR__SYSTEM;
+
+	/**
+	 * The feature id for the '<em><b>Out</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HEAD__OUT = GENERATOR__OUT;
+
+	/**
+	 * The feature id for the '<em><b>In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HEAD__IN = GENERATOR__IN;
+
+	/**
+	 * The number of structural features of the '<em>Gen Head</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HEAD_FEATURE_COUNT = GENERATOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Gen Head</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEN_HEAD_OPERATION_COUNT = GENERATOR_OPERATION_COUNT + 0;
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.ProductionLineModel <em>Production Line Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Production Line Model</em>'.
+	 * @see productionlinesystem.abstractsyntax.ProductionLineModel
+	 * @generated
+	 */
+	EClass getProductionLineModel();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link productionlinesystem.abstractsyntax.ProductionLineModel#getElements <em>Elements</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Elements</em>'.
+	 * @see productionlinesystem.abstractsyntax.ProductionLineModel#getElements()
+	 * @see #getProductionLineModel()
+	 * @generated
+	 */
+	EReference getProductionLineModel_Elements();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link productionlinesystem.abstractsyntax.ProductionLineModel#getSimulationstate <em>Simulationstate</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Simulationstate</em>'.
+	 * @see productionlinesystem.abstractsyntax.ProductionLineModel#getSimulationstate()
+	 * @see #getProductionLineModel()
+	 * @generated
+	 */
+	EReference getProductionLineModel_Simulationstate();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.ProductionLineElement <em>Production Line Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Production Line Element</em>'.
+	 * @see productionlinesystem.abstractsyntax.ProductionLineElement
+	 * @generated
+	 */
+	EClass getProductionLineElement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link productionlinesystem.abstractsyntax.ProductionLineElement#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see productionlinesystem.abstractsyntax.ProductionLineElement#getName()
+	 * @see #getProductionLineElement()
+	 * @generated
+	 */
+	EAttribute getProductionLineElement_Name();
+
+	/**
+	 * Returns the meta object for the container reference '{@link productionlinesystem.abstractsyntax.ProductionLineElement#getSystem <em>System</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>System</em>'.
+	 * @see productionlinesystem.abstractsyntax.ProductionLineElement#getSystem()
+	 * @see #getProductionLineElement()
+	 * @generated
+	 */
+	EReference getProductionLineElement_System();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.Container <em>Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Container</em>'.
+	 * @see productionlinesystem.abstractsyntax.Container
+	 * @generated
+	 */
+	EClass getContainer();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.Machine <em>Machine</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Machine</em>'.
+	 * @see productionlinesystem.abstractsyntax.Machine
+	 * @generated
+	 */
+	EClass getMachine();
+
+	/**
+	 * Returns the meta object for the reference '{@link productionlinesystem.abstractsyntax.Machine#getOut <em>Out</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Out</em>'.
+	 * @see productionlinesystem.abstractsyntax.Machine#getOut()
+	 * @see #getMachine()
+	 * @generated
+	 */
+	EReference getMachine_Out();
+
+	/**
+	 * Returns the meta object for the reference '{@link productionlinesystem.abstractsyntax.Machine#getIn <em>In</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>In</em>'.
+	 * @see productionlinesystem.abstractsyntax.Machine#getIn()
+	 * @see #getMachine()
+	 * @generated
+	 */
+	EReference getMachine_In();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.Conveyor <em>Conveyor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Conveyor</em>'.
+	 * @see productionlinesystem.abstractsyntax.Conveyor
+	 * @generated
+	 */
+	EClass getConveyor();
+
+	/**
+	 * Returns the meta object for the reference '{@link productionlinesystem.abstractsyntax.Conveyor#getTray <em>Tray</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Tray</em>'.
+	 * @see productionlinesystem.abstractsyntax.Conveyor#getTray()
+	 * @see #getConveyor()
+	 * @generated
+	 */
+	EReference getConveyor_Tray();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.Tray <em>Tray</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Tray</em>'.
+	 * @see productionlinesystem.abstractsyntax.Tray
+	 * @generated
+	 */
+	EClass getTray();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.Assembler <em>Assembler</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assembler</em>'.
+	 * @see productionlinesystem.abstractsyntax.Assembler
+	 * @generated
+	 */
+	EClass getAssembler();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.Generator <em>Generator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Generator</em>'.
+	 * @see productionlinesystem.abstractsyntax.Generator
+	 * @generated
+	 */
+	EClass getGenerator();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.GenHandle <em>Gen Handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Gen Handle</em>'.
+	 * @see productionlinesystem.abstractsyntax.GenHandle
+	 * @generated
+	 */
+	EClass getGenHandle();
+
+	/**
+	 * Returns the meta object for class '{@link productionlinesystem.abstractsyntax.GenHead <em>Gen Head</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Gen Head</em>'.
+	 * @see productionlinesystem.abstractsyntax.GenHead
+	 * @generated
+	 */
+	EClass getGenHead();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	AbstractsyntaxFactory getAbstractsyntaxFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.ProductionLineModelImpl <em>Production Line Model</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.ProductionLineModelImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getProductionLineModel()
+		 * @generated
+		 */
+		EClass PRODUCTION_LINE_MODEL = eINSTANCE.getProductionLineModel();
+
+		/**
+		 * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTION_LINE_MODEL__ELEMENTS = eINSTANCE.getProductionLineModel_Elements();
+
+		/**
+		 * The meta object literal for the '<em><b>Simulationstate</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTION_LINE_MODEL__SIMULATIONSTATE = eINSTANCE.getProductionLineModel_Simulationstate();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.ProductionLineElementImpl <em>Production Line Element</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.ProductionLineElementImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getProductionLineElement()
+		 * @generated
+		 */
+		EClass PRODUCTION_LINE_ELEMENT = eINSTANCE.getProductionLineElement();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTION_LINE_ELEMENT__NAME = eINSTANCE.getProductionLineElement_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>System</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTION_LINE_ELEMENT__SYSTEM = eINSTANCE.getProductionLineElement_System();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.ContainerImpl <em>Container</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.ContainerImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getContainer()
+		 * @generated
+		 */
+		EClass CONTAINER = eINSTANCE.getContainer();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.MachineImpl <em>Machine</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.MachineImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getMachine()
+		 * @generated
+		 */
+		EClass MACHINE = eINSTANCE.getMachine();
+
+		/**
+		 * The meta object literal for the '<em><b>Out</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MACHINE__OUT = eINSTANCE.getMachine_Out();
+
+		/**
+		 * The meta object literal for the '<em><b>In</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MACHINE__IN = eINSTANCE.getMachine_In();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.ConveyorImpl <em>Conveyor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.ConveyorImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getConveyor()
+		 * @generated
+		 */
+		EClass CONVEYOR = eINSTANCE.getConveyor();
+
+		/**
+		 * The meta object literal for the '<em><b>Tray</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONVEYOR__TRAY = eINSTANCE.getConveyor_Tray();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.TrayImpl <em>Tray</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.TrayImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getTray()
+		 * @generated
+		 */
+		EClass TRAY = eINSTANCE.getTray();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.AssemblerImpl <em>Assembler</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.AssemblerImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getAssembler()
+		 * @generated
+		 */
+		EClass ASSEMBLER = eINSTANCE.getAssembler();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.GeneratorImpl <em>Generator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.GeneratorImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getGenerator()
+		 * @generated
+		 */
+		EClass GENERATOR = eINSTANCE.getGenerator();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.GenHandleImpl <em>Gen Handle</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.GenHandleImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getGenHandle()
+		 * @generated
+		 */
+		EClass GEN_HANDLE = eINSTANCE.getGenHandle();
+
+		/**
+		 * The meta object literal for the '{@link productionlinesystem.abstractsyntax.impl.GenHeadImpl <em>Gen Head</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see productionlinesystem.abstractsyntax.impl.GenHeadImpl
+		 * @see productionlinesystem.abstractsyntax.impl.AbstractsyntaxPackageImpl#getGenHead()
+		 * @generated
+		 */
+		EClass GEN_HEAD = eINSTANCE.getGenHead();
+
+	}
+
+} //AbstractsyntaxPackage

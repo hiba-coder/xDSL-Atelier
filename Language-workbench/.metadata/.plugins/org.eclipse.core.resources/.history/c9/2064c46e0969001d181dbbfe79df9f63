@@ -1,0 +1,37 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.impl;
+
+import org.eclipse.emf.ecore.EClass;
+
+import productionlinesystem.abstractsyntax.AbstractsyntaxPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Container</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public abstract class ContainerImpl extends ProductionLineElementImpl
+		implements productionlinesystem.abstractsyntax.Container {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ContainerImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return AbstractsyntaxPackage.Literals.CONTAINER;
+	}
+
+} //ContainerImpl

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated abstractsyntax -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="productionlinesystem.abstractsyntax.presentation.AbstractsyntaxModelWizardID"
+            name="%_UI_AbstractsyntaxModelWizard_label"
+            class="productionlinesystem.abstractsyntax.presentation.AbstractsyntaxModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AbstractsyntaxModelFile.gif">
+         <description>%_UI_AbstractsyntaxModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated abstractsyntax -->
+      <editor
+            id="productionlinesystem.abstractsyntax.presentation.AbstractsyntaxEditorID"
+            name="%_UI_AbstractsyntaxEditor_label"
+            icon="icons/full/obj16/AbstractsyntaxModelFile.gif"
+            extensions="abstractsyntax"
+            class="productionlinesystem.abstractsyntax.presentation.AbstractsyntaxEditor"
+            contributorClass="productionlinesystem.abstractsyntax.presentation.AbstractsyntaxActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated abstractsyntax -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="productionlinesystem.abstractsyntax.runtimestate.presentation.runtimestateModelWizardID"
+            name="%_UI_runtimestateModelWizard_label"
+            class="productionlinesystem.abstractsyntax.runtimestate.presentation.runtimestateModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/runtimestateModelFile.gif">
+         <description>%_UI_runtimestateModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated abstractsyntax -->
+      <editor
+            id="productionlinesystem.abstractsyntax.runtimestate.presentation.runtimestateEditorID"
+            name="%_UI_runtimestateEditor_label"
+            icon="icons/full/obj16/runtimestateModelFile.gif"
+            extensions="runtimestate"
+            class="productionlinesystem.abstractsyntax.runtimestate.presentation.runtimestateEditor"
+            contributorClass="productionlinesystem.abstractsyntax.runtimestate.presentation.runtimestateActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

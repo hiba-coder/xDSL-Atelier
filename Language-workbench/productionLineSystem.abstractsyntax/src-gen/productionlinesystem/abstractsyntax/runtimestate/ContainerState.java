@@ -1,0 +1,16 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.runtimestate;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Container State</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage#getContainerState()
+ * @model
+ * @generated
+ */
+public interface ContainerState extends ProductionLineElementState {
+} // ContainerState

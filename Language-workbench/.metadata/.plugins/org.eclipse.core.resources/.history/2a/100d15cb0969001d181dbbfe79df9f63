@@ -1,0 +1,37 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.runtimestate.impl;
+
+import org.eclipse.emf.ecore.EClass;
+
+import productionlinesystem.abstractsyntax.runtimestate.ContainerState;
+import productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Container State</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public class ContainerStateImpl extends ProductionLineElementStateImpl implements ContainerState {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ContainerStateImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return runtimestatePackage.Literals.CONTAINER_STATE;
+	}
+
+} //ContainerStateImpl

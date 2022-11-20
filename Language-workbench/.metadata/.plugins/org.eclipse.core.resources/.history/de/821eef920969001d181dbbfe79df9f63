@@ -1,0 +1,16 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.runtimestate;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Handle</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage#getHandle()
+ * @model
+ * @generated
+ */
+public interface Handle extends Parts {
+} // Handle

@@ -1,0 +1,48 @@
+/**
+ */
+package productionlinesystem.abstractsyntax.runtimestate;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Parts</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link productionlinesystem.abstractsyntax.runtimestate.Parts#getContainerState <em>Container State</em>}</li>
+ * </ul>
+ *
+ * @see productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage#getParts()
+ * @model abstract="true"
+ * @generated
+ */
+public interface Parts extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Container State</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link productionlinesystem.abstractsyntax.runtimestate.ContainerState#getParts <em>Parts</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Container State</em>' container reference.
+	 * @see #setContainerState(ContainerState)
+	 * @see productionlinesystem.abstractsyntax.runtimestate.runtimestatePackage#getParts_ContainerState()
+	 * @see productionlinesystem.abstractsyntax.runtimestate.ContainerState#getParts
+	 * @model opposite="parts" required="true" transient="false"
+	 * @generated
+	 */
+	ContainerState getContainerState();
+
+	/**
+	 * Sets the value of the '{@link productionlinesystem.abstractsyntax.runtimestate.Parts#getContainerState <em>Container State</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Container State</em>' container reference.
+	 * @see #getContainerState()
+	 * @generated
+	 */
+	void setContainerState(ContainerState value);
+
+} // Parts

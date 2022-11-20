@@ -1,0 +1,20 @@
+	// BeginInjectInto abstractsyntax.aspects.ProductionLineElementAspect#void work() from abstractsyntax.aspects.AssemblerAspect
+		if (_self instanceof productionlinesystem.abstractsyntax.Assembler){
+			abstractsyntax.aspects.AssemblerAspect.work((productionlinesystem.abstractsyntax.Assembler)_self);
+		} else
+		// EndInjectInto abstractsyntax.aspects.ProductionLineElementAspect#void work() from abstractsyntax.aspects.AssemblerAspect
+	// BeginInjectInto abstractsyntax.aspects.MachineAspect#void start() from abstractsyntax.aspects.GenHandleAspect
+		if (_self instanceof productionlinesystem.abstractsyntax.GenHandle){
+			abstractsyntax.aspects.GenHandleAspect.start((productionlinesystem.abstractsyntax.GenHandle)_self);
+		} else
+		// EndInjectInto abstractsyntax.aspects.MachineAspect#void start() from abstractsyntax.aspects.GenHandleAspect
+	// BeginInjectInto abstractsyntax.aspects.ContainerAspect#void moveAlong() from abstractsyntax.aspects.ConveyorAspect
+		if (_self instanceof productionlinesystem.abstractsyntax.Conveyor){
+			abstractsyntax.aspects.ConveyorAspect.moveAlong((productionlinesystem.abstractsyntax.Conveyor)_self);
+		} else
+		// EndInjectInto abstractsyntax.aspects.ContainerAspect#void moveAlong() from abstractsyntax.aspects.ConveyorAspect
+	// BeginInjectInto abstractsyntax.aspects.MachineAspect#void start() from abstractsyntax.aspects.GenHeadAspect
+		if (_self instanceof productionlinesystem.abstractsyntax.GenHead){
+			abstractsyntax.aspects.GenHeadAspect.start((productionlinesystem.abstractsyntax.GenHead)_self);
+		} else
+		// EndInjectInto abstractsyntax.aspects.MachineAspect#void start() from abstractsyntax.aspects.GenHeadAspect

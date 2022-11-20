@@ -1,0 +1,14 @@
+# List of the Java classes that have been aspectized and name of the aspect classes separated by comma
+	productionlinesystem.abstractsyntax.runtimestate.ProductionLineElementState = abstractsyntax.runtimestate.aspects.ProductionLineElementStateAspect
+	productionlinesystem.abstractsyntax.ProductionLineElement = abstractsyntax.aspects.ProductionLineElementAspect
+	productionlinesystem.abstractsyntax.Assembler = abstractsyntax.aspects.AssemblerAspect
+	productionlinesystem.abstractsyntax.Machine = abstractsyntax.aspects.MachineAspect
+	productionlinesystem.abstractsyntax.GenHead = abstractsyntax.aspects.GenHeadAspect
+	productionlinesystem.abstractsyntax.runtimestate.SimulationState = abstractsyntax.runtimestate.aspects.SimulationStateAspect
+	productionlinesystem.abstractsyntax.Tray = abstractsyntax.aspects.TrayAspect
+	productionlinesystem.abstractsyntax.Container = abstractsyntax.aspects.ContainerAspect
+	productionlinesystem.abstractsyntax.runtimestate.ContainerState = abstractsyntax.runtimestate.aspects.ContainerStateAspect
+	productionlinesystem.abstractsyntax.Conveyor = abstractsyntax.aspects.ConveyorAspect
+	productionlinesystem.abstractsyntax.GenHandle = abstractsyntax.aspects.GenHandleAspect
+	productionlinesystem.abstractsyntax.Generator = abstractsyntax.aspects.GeneratorAspect
+	productionlinesystem.abstractsyntax.ProductionLineModel = abstractsyntax.aspects.ProductionLineModelAspect

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: productionLineSystem.xdsl
+Bundle-SymbolicName: productionLineSystem.xdsl; singleton:=true
+Automatic-Module-Name: productionLineSystem.xdsl
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

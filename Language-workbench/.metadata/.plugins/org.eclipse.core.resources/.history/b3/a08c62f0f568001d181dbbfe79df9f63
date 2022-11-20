@@ -1,0 +1,5 @@
+	// BeginInjectInto abstractsyntax.aspects.MachineAspect#void start() from abstractsyntax.aspects.GenHeadAspect
+		if (_self instanceof productionlinesystem.abstractsyntax.GenHead){
+			abstractsyntax.aspects.GenHeadAspect.start((productionlinesystem.abstractsyntax.GenHead)_self);
+		} else
+		// EndInjectInto abstractsyntax.aspects.MachineAspect#void start() from abstractsyntax.aspects.GenHeadAspect
